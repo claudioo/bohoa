@@ -9,11 +9,11 @@
 */
 
 body {
-	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-family: "BodoniXT", "Helvetica Neue", Arial, sans-serif;
 	font-size: 30px;
 	font-size: 3rem;
 	text-align: center;
-	background-color: #c9d5e1;
+	background-color: #f1e0d8;
 }
 
 h1 {
@@ -90,49 +90,35 @@ code {
 	top: 0;
 	left: 0;
 	z-index: 10;
-	background: #222438;
-	border-bottom: solid 3px #959db5;
-	padding: 5px;
-	padding: .5rem;
+	background: #f1e0d8;
+	border-bottom: solid 3px black;
+	padding: .10rem;
+	padding: 10px 10px 15px 10px;
 	opacity: .9;
 }
 
-#instructions {
-	position: fixed;
-	top: 25px;
-	left: 40px;
-	background: #fff;
-	border: solid 3px #959db5;
-	padding: 5px 10px;
-	text-transform: uppercase;
-	width: 180px;
-	border-radius: 10px;
-	font-size: 14px;
-	font-weight: bold;
-	z-index: 99;
-	color: #222438
-}
 
-#powered {
-	font-weight: bold;
-	padding-bottom: 20px;
-}
 
 .nav-button {
 	padding: 10px;
 	padding: 1rem;
+	padding-bottom: 5px;	
 	text-decoration: none;
-	color: #959db5;
-	font-size: 20px;
-	font-size: 2rem;
-	text-shadow: 0 -1px 1px #000;
+	color: black;
+	font-size: 16px;
+	font-size: 1.8rem;
 	text-transform: uppercase;
-	font-weight: bold;
 	font-style: normal;
 }
 
+.current, a.nav-button {
+	color: black;
+}
+
 .current, a.nav-button:hover {
-	color: #fff;
+	color: #333;
+	background: url(../img/menu-hover.png) no-repeat bottom;
+	padding-bottom: 5px;
 }
 
 #resize-graphic {
@@ -146,10 +132,15 @@ code {
 
 .slide {
 	margin: 0 auto;
-	width: 99%;
+	width: 100%;
 	padding: 120px 0;
 	padding: 12rem 0;
 	height: 40rem;
+}
+
+.slide.first {
+	margin: 0 auto;
+	padding: 60px 0;
 }
 
 #title {

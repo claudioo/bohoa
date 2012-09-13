@@ -1,0 +1,68 @@
+.container {
+	/* defaults for resposive height container */
+	position: relative;
+	width: 100%;
+	height: 0;
+	
+	/* 39% being the ratio we are maintaining 
+	 * calculated by looking at the image 
+	 * ratio: 400/1024 = ~0.39 */
+	padding: 0 0 39% 0;
+}
+
+.iosSlider {
+	width: 100%;
+	
+	/* this height ends up being your maximum height, 
+	 * if you want it to scale forever, set it to 
+	 * a very high number */
+	height: 600px;
+}
+
+.iosSlider .slider {
+	width: 100%;
+	height: 100%;
+}
+
+.iosSlider .slider .item {
+	float: left;
+	height: auto;
+	width: 100%;
+	position: relative
+}
+
+.iosSlider .slider .item img {
+	width: 100%;
+	height: auto;
+}
+
+.text1 {
+	background: none repeat scroll 0 0 #000000;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    right: 150px;
+    top: 30px;
+    padding: 5px 2px 0 7px;
+}
+
+.text1 span {
+	color: #FFFFFF;
+    font: 50px/65px "BodoniXT";
+    padding: 0 8px;
+}
+
+.text2 {
+	background: none repeat scroll 0 0 #000000;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    padding: 5px 7px 7px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+.text2 span {
+	color: #FFFFFF;
+    font: 16px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
