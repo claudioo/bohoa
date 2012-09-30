@@ -15,125 +15,271 @@
 	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/jquery.scrolldeck.js"></script>
-	<script type="text/javascript" src="js/jquery.iosslider.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				
-				$('.iosSlider').iosSlider({
-					autoSlide: true,
-					snapToChildren: true,
-					desktopClickDrag: true,
-					scrollbar: true,
-					scrollbarHide: false,
-					scrollbarLocation: 'bottom',
-					scrollbarHeight: '6px',
-					scrollbarBackground: 'black',
-					scrollbarBorder: '1px solid #000',
-					scrollbarMargin: '0 30px 16px 30px',
-					scrollbarOpacity: '0.75'
-				});
-				
-			});				
-			function slideComplete(args) {
-					
-				$(args.sliderObject).find('.text1, .text2').attr('style', '');
-				
-				$(args.currentSlideObject).find('.text1').animate({
-					right: '100px',
-					opacity: '0.8'
-				}, 400, 'easeOutQuint');
-				
-				$(args.currentSlideObject).find('.text2').delay(200).animate({
-					right: '50px',
-					opacity: '0.8'
-				}, 400, 'easeOutQuint');
-				
-			}
-			
-			function sliderLoaded(args) {
-					
-				slideComplete(args);
-				
-				slideChange(args);
-				
-			}
-		</script>
 
 </head>
 <body>
-	<a href="https://github.com/johnpolacek/scrolldeck.js">
-		<img style="position: absolute; top: 0; right: 0; border: 0; z-index: 999999999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" alt="Fork me on GitHub" />
-	</a>
-	
 	<div id="header">
-		<a href="#howtouse" class="nav-button">How to Use</span></a>
-		<a href="#examples" class="nav-button">Examples</span></a>
-		<a href="#credits" class="nav-button">Credits</span></a>
+		<div class="logo">
+			<a href="index.html" title="Bohoá - Boho Chic">
+				<img src="img/bohoa-logo-peq.png" />
+			</a>
+		</div>
+		<nav>
+			<a href="#sobre" class="nav-button sliding">A Bohoá</span></a>
+			<a href="#examples" class="nav-button sliding">Examples</span></a>
+			<a href="#credits" class="nav-button sliding">Credits</span></a>
+		</nav>
 	</div>
 
 	<div class="slide first">
 
-			<div class="iosSlider">
-			
-				<div class="slider">
-
-					<div class="item">
-						<div class="text1"><span>Touch Me.</span></div>
-			
-						<div class="text2"><span>Hardware accelerated using<br />CSS3 for supported iOS,<br />Android and WebKit</span></div>
-
-						<img src="img/h-slider-1.jpg" />
-						
-					</div>
-					<div class="item">
-						<img src="img/h-slider-2.jpg" />
-					</div>
-					<div class="item">
-						<img src="img/h-slider-3.jpg" />
-					</div>
-					<div class="item">
-						<img src="img/h-slider-4.jpg" />
-					</div>
-					<div class="item">
-						<img src="img/h-slider-5.jpg" />
-					</div>
-				
-				</div>
-			
-			</div>
 
 	</div>
 	
-	<div class="slide" id="howtouse">
-		<h1>How to Use</h1>
-		<p>Build a web page with each slide as a div.
-			<small class="pro-tip">Pro-Tip: <a href="http://blog.responsivenews.co.uk/post/13925578846/fluid-grids-orientation-resolution-independence">Use rem&rsquo;s</a> to make content scale <br />(resize this window to see)</small>
-		</p>
+	<div class="slide sobre" id="sobre">
+		<div class="oi">
+		<img src="img/bohoa-imagem-sobre.png" />
+		<span>
+		<h1>Boho Chic!</h1>
+		<h2>
+			Peças diferenciadas, detalhes únicos.
+		</h2>
+			<a href="#bohoa" class="button sliding">Saiba Mais!</span></a>
+		</span>
+		</div>
 	</div>
 
-	<div class="slide">
-		<p>Create section navigation by linking to slide id&rsquo;s <small>(optional)</small></p>
-		<p>After linking all the required scripts (jQuery, Scrollorama, scrollTo, easing &amp; scrolldeck), create the slide deck on document ready event.</p>
-		<p><blockquote><pre>
-$(document).ready(function() {
-  var deck = new $.scrolldeck();
-});</pre></blockquote></p>
+	<div class="slide bohoa" id="bohoa">
+		<center>
+			<img src="img/bohoa-logo-grande.png" alt="Bohoá - Boho chic!" />
+		</center>
+		<p>Criada em <strong>Florianópolis</strong> em junho de 2011, a BohoÁ surge com o objetivo de desenvolver roupas e acessórios com características e elementos que remetem à natureza e à liberdade. Com fortes influências do conceito Boho Chic, a marca possui referências étnicas dos anos 60 e 70. As peças com aparência única são voltadas para mulheres com personalidade forte, ousadas e despojadas, que valorizam a elegância.
+		</p>
+		<a href="#onde-encontrar" class="button sliding">Onde encontrar?</span></a>
+
 	</div>
 
-	<div class="slide">
-		<p>You can configure the settings as follows<br /><small>(example has the default config values assigned)</small></p>
-		<p><blockquote><pre>
-$(document).ready(function() {
-  var deck = new $.scrolldeck({
-    buttons: '.nav-button',
-    slides: '.slide',
-    duration: 600,
-    easing: 'easeInOutExpo',
-	offset: 0
-  });
-});</pre></blockquote></p>
-		<p><small class="pro-tip">Pro-Tip: To hide the scrollbar, set <code>html{overflow:hidden;}</code> in your css</small>
-		</p>
+	<div id="onde-encontrar" class="slide onde-encontrar">
+		<h1>
+			Onde encontrar
+		</h1>
+		<h2>Quer revender? Entre em <a href="#contato" title="Entre em contato">contato</a>!</h2>
+
+		<ul>
+			<span>Florianópolis</span>
+			<li>
+				<a href="" class="new-window">M. Hunt</a>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+				<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+		</ul>
+
+		<ul>
+			<span>Florianópolis</span>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+		</ul>	
+
+		<ul>
+			<span>Florianópolis</span>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+		</ul>	
+
+		<ul>
+			<span>Florianópolis</span>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+			<li>
+				<h1>
+					<a href="" class="new-window">M. Hunt</a>
+				</h1>
+				<div>
+					Rua Aracy Vaz Callado,  534 / Sala 102<br />
+					Estreito, Florianópolis, SC<br />
+					Telefone (48) 3244-7389
+				</div>
+			</li>
+		</ul>	
+
+
 	</div>
 	
 	<div class="slide" id="animations">
@@ -181,7 +327,7 @@ $(document).ready(function() {
 	  $(document).ready(function() {
 		  
 			var deck = new $.scrolldeck({
-				buttons: '.nav-button',
+				buttons: '.sliding',
 				easing: 'easeInOutExpo'
 			});
 			

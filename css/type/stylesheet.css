@@ -1,12 +1,30 @@
 @font-face {
-    font-family: 'BodoniXT';
-    src: url('BodoniXT-webfont.eot');
-    src: url('BodoniXT-webfont.eot?#iefix') format('embedded-opentype'),
-         url('BodoniXT-webfont.woff') format('woff'),
-         url('BodoniXT-webfont.ttf') format('truetype'),
-         url('BodoniXT-webfont.svg#BodoniXTRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+		font-family: 'BodoniMT';
+		src: url('bod_r.eot');
+		src: url('bod_r.eot?#iefix') format('embedded-opentype'),
+				 url('bod_r.woff') format('woff'),
+				 url('bod_r.ttf') format('truetype'),
+				 url('bod_r.svg#bod_r') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}		
+@font-face {
+		font-family: 'BodoniMT-Bold';
+		src: url('bod_b.eot');
+		src: url('bod_b.eot?#iefix') format('embedded-opentype'),
+				 url('bod_b.woff') format('woff'),
+				 url('bod_b.ttf') format('truetype'),
+				 url('bod_b.svg#bod_b') format('svg');
+		font-weight: normal;
+		font-style: normal;
 }
-
+@font-face {
+		font-family: 'BodoniMT-Italic';
+		src: url('bod_i.eot');
+		src: url('bod_i.eot?#iefix') format('embedded-opentype'),
+				 url('bod_i.woff') format('woff'),
+				 url('bod_i.ttf') format('truetype'),
+				 url('bod_i.svg#bod_i') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}

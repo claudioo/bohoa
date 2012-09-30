@@ -1,41 +1,49 @@
 /*
 	COLORS
  
-	Dark Blue 			#222438
-	Medium Blue			#959db5
-	Light Blue	 		#c9d5e1
-	Dark Blue Links		#1a4a6a
+	Pink 			    #ee5662
 	
 */
 
+
 body {
-	font-family: "BodoniXT", "Helvetica Neue", Arial, sans-serif;
-	font-size: 30px;
-	font-size: 3rem;
-	text-align: center;
 	background-color: #f1e0d8;
 }
 
+
+/* Texto Default */
+
+html {font-size: 62.5%;}
+
+body {
+	font-family: "BodoniMT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-weight: normal;
+	font-size: 14px;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+
 h1 {
-	font-size: 180px;
-	font-size: 18rem;
+	font-size: 36px;
+	font-size: 3.6rem;
+	font-weight:  normal;
 	margin: 0;
-	text-shadow: 0 2px 1px #fff;
+
 }
 
 p {
 	width: 80%;
 	margin: 20px auto;
 	margin: 2rem auto;
-	text-shadow: 0 1px 1px #fff;
+
 	line-height: 1.2;
 }
 
 a, a:visited {
-	color: #1a4a6a;
-	font-weight: bold;
-	font-style: italic;
+	color: #ed5561;
 	text-shadow: none;
+	text-decoration: none;	
 }
 
 small {
@@ -43,18 +51,6 @@ small {
 	font-style: italic;
 	font-size: 20px;
 	font-size: 2rem;
-	text-shadow: 0 1px 0 #fff;
-}
-
-.download {
-	padding-left: 15px;
-	padding-left: 1.5rem;
-}
-
-.pro-tip {
-	display: block;
-	padding: 20px;
-	padding: 2rem;
 	text-shadow: 0 1px 0 #fff;
 }
 
@@ -93,22 +89,30 @@ code {
 	background: #f1e0d8;
 	border-bottom: solid 3px black;
 	padding: .10rem;
-	padding: 10px 10px 15px 10px;
-	opacity: .9;
+	padding: 10px;
+	opacity: .95;
 }
 
-
-
+#header .logo {
+	display: inline-block;
+	height: 55px;
+}
+nav {
+	display: inline-block;
+	margin: 10px 0 0 0;
+	vertical-align: top;
+	height: 55px;
+}
 .nav-button {
 	padding: 10px;
 	padding: 1rem;
-	padding-bottom: 5px;	
 	text-decoration: none;
 	color: black;
-	font-size: 16px;
-	font-size: 1.8rem;
+	font-size: 15px;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	font-style: normal;
+	display: inline-block;
 }
 
 .current, a.nav-button {
@@ -141,51 +145,140 @@ code {
 .slide.first {
 	margin: 0 auto;
 	padding: 60px 0;
+	height: 100%;
 }
 
-#title {
-	line-height: .8;
+.slide.sobre {
+width: 100%;
+text-align: center;
+height: 956px;
 }
 
-#author {
-	width: 75%;
-	font-size: 20px;
-	font-size: 2rem;
-	margin: 0 auto;
-	padding-bottom: 20px;
-	padding-bottom: 2rem;
-	text-align: right;
+.oi {
+	width: 450px;
+	margin: auto;
+	text-align: left;
+
+}
+.sobre img {position: absolute; z-index: -1; margin: 0; padding: 0 100px;}
+
+.sobre span {
+	position: absolute;
+	display: inline-block;
+	top: 450px;
+	margin: 0;
+	padding: 0;
+}
+.sobre h1 {
+	font-size: 6rem;
 	font-style: italic;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
-.twitter-follow-button {
-	position: relative;
-	top: 8px;
-	left: 4px;
+.sobre h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.8em;
+	font-style: italic;
+	color:  #666;
+	font-weight: normal;		
 }
 
-#animations {
-	padding-top: 70px;
-	padding-top: 7rem;
-	height: 480px;
-	height: 48rem;
+.bohoa p {
+	font-size: 13px;
+	font-size: 1.3em;
+	color:  #666;
+	font-weight: normal;
+	padding: 10px;
+	margin: 30px auto;	
+	text-align: center;
 }
 
-#examples h1 {
-	padding-bottom: 20px;
-	padding-bottom: 2rem;
+.onde-encontrar {
+	margin: 0 auto;
+}
+.onde-encontrar h1 {
+	font-size: 60px;
+	font-size: 6rem;
+	font-family: 'BodoniMT';
+	margin: 0;
 }
 
-#examples, #examples p, #credits {
-	line-height: .8;
+.onde-encontrar h2 {
+	font-size: 50px;
+	font-size: 5rem;
+	font-family: 'BodoniMT-Italic';
+	font-weight: normal;
+	color: #666;
+	margin: 0;
 }
 
-#examples p {
-	padding-top: 20px;
+.onde-encontrar ul {
+	display: inline-block;
+	padding: 0;
+	margin: 50px 20px;
+	text-align: left;
+	list-style: none;
 }
 
-#credits a {
-	padding-right: 3px;
+.onde-encontrar li {
+	list-style: none;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.onde-encontrar ul span {
+	text-transform: uppercase;
+	font-family: 'BodoniMT-Italic';
+	font-size: 11px;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.onde-encontrar ul a {
+	font-family: 'BodoniMT-Bold';
+	font-size: 13px;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	color: black;
+	background: url(../img/new-window.png) no-repeat left;
+	border-bottom: 1px dotted black;
+	display: block;
+	padding: 0 0 3px 15px;
+	margin-bottom: 5px;
+}
+
+.onde-encontrar ul a:hover {
+	opacity: 0.5;
+}
+
+.onde-encontrar ul div {
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #666;
+}
+
+a.button {
+	width: 230px;
+	display: block;
+	background: #ed5561 url(../img/arrow.png) no-repeat 205px 15px;
+	color: white;
+	font-family: 'BodoniMT-Italic';
+	font-size: 1.2em;
+	padding: 8px 20px 8px 0;
+	z-index: 9999 !important;
+	margin: 20px auto;
+	text-align: center;
+}
+
+a.button:hover {
+	background: black url(../img/arrow.png) no-repeat 205px 18px;
+	color: white;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
 }
 
 /*------------------------  BASE-REM SIZING  */
@@ -195,65 +288,88 @@ code {
 	html {
 		font-size: 12px;
 	}
+/*
+		.sobre span {
+		top: 90%;
+		left: 27%;
+	}
+*/
+
 }
 
 @media (max-width: 1400px) {
 	html {
 		font-size: 11px;
 	}
+	
 }
 
 /* target screen width  */
 @media (max-width: 1280px) {
 	html {
-		font-size: 10px;
+		font-size: 11px;
 	}
 }
 	
 @media (max-width: 1160px) {
 	html {
-		font-size: 9px;
+		font-size: 11px;
 	}
 }
 	
 @media (max-width: 1040px) {
 	html {
-		font-size: 8px;
+		font-size: 11px;
 	}
 }
 	
 @media (max-width: 920px) {
 	html {
-		font-size: 7px;
+		font-size: 10px;
 	}
 }
 	
 @media (max-width: 800px) {
 	html {
-		font-size: 6px;
+		font-size: 10px;
 	}
 }
 	
 @media (max-width: 680px) {
 	html {
-		font-size: 5px;
+		font-size: 10px;
 	}
 }
 	
 @media (max-width: 560px) {
 	html {
-		font-size: 4px;
+		font-size: 9px;
 	}
+
 }
-	
+
+/* Mobile Screen */
+
 @media (max-width: 440px) {
 	html {
-		font-size: 3px;
+		font-size: 60%;
 	}
+
+	body {
+
+	}
+
+	.bohoa img {
+		padding-left: 20px;
+	}
+	.bohoa p {text-align: justify; padding: 0;}
+	.sobre img {width: 70%; }
+	.sobre span {font-size: 0.8em; margin: 50px 50px;}
+
 }
 
 @media (max-width: 320px) {
 	html {
-		font-size: 3px;
+		font-size: 50% !important;
 	}
 }
