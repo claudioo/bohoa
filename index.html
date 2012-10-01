@@ -9,13 +9,17 @@
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/photoslider.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+
 	
-	<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/sawpf.js"></script>n	
 	<script type="text/javascript" src="js/jquery.scrollorama.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/jquery.scrolldeck.js"></script>
-
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+	<script type="text/javascript" src="js/jquery.zoom.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -26,8 +30,9 @@
 		</div>
 		<nav>
 			<a href="#sobre" class="nav-button sliding">A Bohoá</span></a>
-			<a href="#examples" class="nav-button sliding">Examples</span></a>
-			<a href="#credits" class="nav-button sliding">Credits</span></a>
+			<a href="#press" class="nav-button sliding">Press</span></a>
+			<a href="#colecao" class="nav-button sliding">Coleção</span></a>
+			<a href="#contato" class="nav-button sliding">Contato</span></a>
 		</nav>
 	</div>
 
@@ -37,25 +42,25 @@
 	</div>
 	
 	<div class="slide sobre" id="sobre">
-		<div class="oi">
+		<div class="boho-chic">
 		<img src="img/bohoa-imagem-sobre.png" />
 		<span>
 		<h1>Boho Chic!</h1>
 		<h2>
 			Peças diferenciadas, detalhes únicos.
 		</h2>
-			<a href="#bohoa" class="button sliding">Saiba Mais!</span></a>
+			<a href="#bohoa" class="button short-sliding">Saiba Mais!</span></a>
 		</span>
 		</div>
 	</div>
 
 	<div class="slide bohoa" id="bohoa">
 		<center>
-			<img src="img/bohoa-logo-grande.png" alt="Bohoá - Boho chic!" />
+			<img class="fade-in" src="img/bohoa-logo-grande.png" alt="Bohoá - Boho chic!" />
 		</center>
 		<p>Criada em <strong>Florianópolis</strong> em junho de 2011, a BohoÁ surge com o objetivo de desenvolver roupas e acessórios com características e elementos que remetem à natureza e à liberdade. Com fortes influências do conceito Boho Chic, a marca possui referências étnicas dos anos 60 e 70. As peças com aparência única são voltadas para mulheres com personalidade forte, ousadas e despojadas, que valorizam a elegância.
 		</p>
-		<a href="#onde-encontrar" class="button sliding">Onde encontrar?</span></a>
+		<a href="#onde-encontrar" class="button short-sliding">Onde encontrar?</span></a>
 
 	</div>
 
@@ -64,7 +69,7 @@
 			Onde encontrar
 		</h1>
 		<h2>Quer revender? Entre em <a href="#contato" title="Entre em contato">contato</a>!</h2>
-
+		<div class="container">
 		<ul>
 			<span>Florianópolis</span>
 			<li>
@@ -278,38 +283,145 @@
 				</div>
 			</li>
 		</ul>	
-
-
 	</div>
+	</div><!-- </onde encontrar> -->
 	
-	<div class="slide" id="animations">
-		<p>Add animations to slides by adding the <code>"animate-in"</code> <br />
-		or <code>"animate-build"</code> classes to elements in your slides.</p>
-		<p><blockquote><pre>
-&lt;div class="slide"&gt;
-    &lt;p class="animate-in" data-animation="fly-in-left"&gt;This paragraph will fly in from the left.&lt;/p&gt;
-    &lt;p class="animate-in" data-animation="fly-in-right"&gt;This paragraph will fly in from the right.&lt;/p&gt;
-&lt;/div&gt;
+	<div class="slide" id="press">
+		<h1>
+			Press
+		</h1>
+		<h2>O que falam sobre nós!</h2>
 
-&lt;div class="slide"&gt;
-    &lt;p&gt;This slide will get be &rsquo;pinned&lsquo; to the top of the screen until all the slide animation builds are complete.&lt;/p&gt;
-    &lt;p class="animate-build" data-build="1"&gt;This paragraph will fade in (the default animation)&lt;/p&gt;
-    &lt;p class="animate-build" data-animation="space-in" data-build="2"&gt;This paragraph will fade in while its letter spacing contracts to normal.&lt;/p&gt;
-&lt;/div&gt;
-</pre></blockquote></p>
-		<p><small>Available animations are <code>"fly-in-left"</code>, <code>"fly-in-right"</code>, <br /><code>"space-in"</code> and the default which is <code>"fade-in"</code></small></p>
-	</div>
-	
-	<div class="slide" id="examples">
-		<div class="container">
-			<h1>Examples</h1>
-			<p><a href="http://johnpolacek.github.com/scrolldeck.js/decks/responsive/">Slide Animations Example</a><br /><small>(What The Heck Is Responsive Web Design)</small></p>
-			<p><a href="http://johnpolacek.github.com/scrolldeck.js/decks/infographics">Image Slides Example</a><br /><small>(Infographics Are Cool)</small></p>
-			<p><a href="http://johnpolacek.github.com/scrolldeck.js/decks/parallax">jQuery Parallax Plugin Example</a></p>
+		<div class="press-box">
+			<a href="" class="saiba-mais">
+				Saiba Mais!
+			</a>
+			<img src="img/press-cover.png" alt="Revista Catarina" />
+			<h1>
+				Revista Catarina 30
+			</h1>
+			<h2>
+				Fevereiro 2012
+			</h2>
 		</div>
+		<div class="press-box">
+			<a href="" class="saiba-mais">
+				Saiba Mais!
+			</a>
+			<img src="img/press-cover.png" alt="Revista Catarina" />
+			<h1>
+				Revista Catarina 30
+			</h1>
+			<h2>
+				Fevereiro 2012
+			</h2>
+		</div>
+		<div class="press-box">
+			<a href="" class="saiba-mais">
+				Saiba Mais!
+			</a>
+			<img src="img/press-cover.png" alt="Revista Catarina" />
+			<h1>
+				Revista Catarina 30
+			</h1>
+			<h2>
+				Fevereiro 2012
+			</h2>
+		</div>
+		<div class="press-box">
+			<a href="" class="saiba-mais">
+				Saiba Mais!
+			</a>
+			<img src="img/press-cover.png" alt="Revista Catarina" />
+			<h1>
+				Revista Catarina 30
+			</h1>
+			<h2>
+				Fevereiro 2012
+			</h2>
+		</div>
+
 	</div>
 	
-	<div class="slide" id="credits">
+	<div class="slide" id="colecao">
+
+		<img class="" style-"display: inline-block;" src="img/bohoa-logo-grande.png" alt="Bohoá - Boho chic!" />
+		<img class="hide" style-"display: inline-block;" src="img/bohoa-penas.png" alt="Bohoá - Boho chic!" />
+
+		<article>
+			<div class="destaque">apresenta:</div>
+			<h1>Primavera/Verão 2012</h1>
+
+			<p>
+				Penas,  franjas ,  tiras de couros,  ilhoses,  termocolantes  e  tie  dye. É com essa mistura  de  diferentes  elementos  que  o Verão 2013 Bohoá, tem como inspiração os índios Cherokees. Possuindo elegância e uma pegada étnica, a coleção traz diferentes tipos de tecidos, do chiffon ao couro, passando por peças artesanais trabalhadas no crochê, mistura de tecidos e tingimentos manuais. Com  toda  essa  riqueza  de  diferentes  materiais, torna-se simples compor looks elegantes e cheios de personalidade,  o que fica ainda mais fácil com o auxílio dos acessórios riquíssimos em detalhes.
+			</p>
+			<p class="hide">
+				O elemento chave da coleção são as penas, que estão presentes na estampa, nos mínimos detalhes e ainda estão harmonizadas com a cartela de cores, que além dos tons terrosos, contém laranja, amarelo, cru, coral, petróleo e cores metalizadas, como o dourado e o cobre.
+			</p>
+			<p class="hide">
+				Com fortes características, essa é uma coleção marcante que tem o poder transitar por todos os lados e romper fronteiras.
+			</p>
+
+		</article>
+				<a href="#carousel" class="button short-sliding">Veja o lookbook!</span></a>
+
+				<div id="carousel" class="es-carousel-wrapper">
+					<div class="es-carousel">
+						<ul>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+								<span>
+									Referências: <br/>
+									Peça 01: 0000<br/>
+									Peça 02: 0000<br/>
+								</span>	
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+							<li class="zoom">
+								<img src="img/colecao/ss13/thumb-B211.png"/>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+	</div>
+	
+	<div class="slide" id="contato">
 		<h1>Credits</h1>
 		<p>scrolldeck.js &amp; <a href="http://johnpolacek.github.com/scrollorama">Scrollorama</a> by <a href="http://twitter.com/johnpolacek">John Polacek</a></p>
 		<p><a href="http://demos.flesler.com/jquery/scrollTo/">jQuery ScrollTo</a> by <a href="https://twitter.com/#!/flesler">Ariel Flesler</a></p>
@@ -320,36 +432,47 @@
 			<a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a>
 		</small></p>
 	</div>
-	
-	<img src="img/resize.png" id="resize-graphic" />
-	
+		
 	<script>
 	  $(document).ready(function() {
 		  
 			var deck = new $.scrolldeck({
 				buttons: '.sliding',
-				easing: 'easeInOutExpo'
-			});
-			
-			// add other animations using the scrolldeck.controller (see Scrollorama plugin)
-			console.log(deck.controller);
-			deck.controller.animate('#instructions',{ duration: 100, property:'opacity', end: 0 });
-		  
-	  });
+				easing: 'easeInOutExpo',
+			    duration: 1000
+			});  
+	  }); 
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		  var deck = new $.scrolldeck({
+		    buttons: '.short-sliding',
+		    slides: '.slide',
+		    duration: 600,
+		    easing: 'easeInOutExpo',
+			offset: 0
+		  });
+		});
 	</script>
 
 	<script type="text/javascript">
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-2821890-9']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type="text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
+		$(document).ready(function() {
+   			$('.zoom').zoom();
+   		});
 	</script>
+
+		<script type="text/javascript">
+			
+			$('#carousel').elastislide({
+				imageW 		: 180,
+				minItems	: 3,
+				margin		: 2,
+				border		: 0,
+				current		: 1
+			});
+			
+		</script>	
 
 </body></html>

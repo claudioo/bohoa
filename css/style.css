@@ -25,11 +25,20 @@ body {
 
 
 h1 {
-	font-size: 36px;
-	font-size: 3.6rem;
-	font-weight:  normal;
+	font-size: 60px;
+	font-size: 6rem;
+	font-family: 'BodoniMT';
+	font-weight: normal;
 	margin: 0;
+}
 
+h2 {
+	font-size: 50px;
+	font-size: 5rem;
+	font-family: 'BodoniMT-Italic';
+	font-weight: normal;
+	color: #666;
+	margin: 0;
 }
 
 p {
@@ -42,7 +51,6 @@ p {
 
 a, a:visited {
 	color: #ed5561;
-	text-shadow: none;
 	text-decoration: none;	
 }
 
@@ -51,7 +59,6 @@ small {
 	font-style: italic;
 	font-size: 20px;
 	font-size: 2rem;
-	text-shadow: 0 1px 0 #fff;
 }
 
 pre {
@@ -85,7 +92,7 @@ code {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 10;
+	z-index: 1000;
 	background: #f1e0d8;
 	border-bottom: solid 3px black;
 	padding: .10rem;
@@ -125,21 +132,16 @@ nav {
 	padding-bottom: 5px;
 }
 
-#resize-graphic {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	opacity: .6;
-}
 
 /*----------------------------------------  SLIDES  */
 
 .slide {
 	margin: 0 auto;
 	width: 100%;
-	padding: 120px 0;
-	padding: 12rem 0;
-	height: 40rem;
+	padding: 150px 0;
+	padding: 15rem 0;
+	height: 60rem;
+	clear: both;
 }
 
 .slide.first {
@@ -154,7 +156,7 @@ text-align: center;
 height: 956px;
 }
 
-.oi {
+.sobre .boho-chic {
 	width: 450px;
 	margin: auto;
 	text-align: left;
@@ -165,8 +167,8 @@ height: 956px;
 .sobre span {
 	position: absolute;
 	display: inline-block;
-	top: 450px;
-	margin: 0;
+	top: 500px;
+	margin: 0 30px;
 	padding: 0;
 }
 .sobre h1 {
@@ -196,40 +198,31 @@ height: 956px;
 	text-align: center;
 }
 
-.onde-encontrar {
+#onde-encontrar {
 	margin: 0 auto;
-}
-.onde-encontrar h1 {
-	font-size: 60px;
-	font-size: 6rem;
-	font-family: 'BodoniMT';
-	margin: 0;
+	clear: both;
+	display: block;
 }
 
-.onde-encontrar h2 {
-	font-size: 50px;
-	font-size: 5rem;
-	font-family: 'BodoniMT-Italic';
-	font-weight: normal;
-	color: #666;
-	margin: 0;
-}
-
-.onde-encontrar ul {
-	display: inline-block;
-	padding: 0;
-	margin: 50px 20px;
+#onde-encontrar ul {
+	display: inline-block; 
+	margin:  50px 20px;
 	text-align: left;
 	list-style: none;
+	padding: 0;
+
 }
 
-.onde-encontrar li {
+#onde-encontrar ul:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+
+#onde-encontrar li {
 	list-style: none;
 	margin: 10px 0;
 	padding: 0;
 }
 
-.onde-encontrar ul span {
+#onde-encontrar ul span {
 	text-transform: uppercase;
 	font-family: 'BodoniMT-Italic';
 	font-size: 11px;
@@ -237,7 +230,7 @@ height: 956px;
 	font-weight: bold;
 }
 
-.onde-encontrar ul a {
+#onde-encontrar ul a {
 	font-family: 'BodoniMT-Bold';
 	font-size: 13px;
 	font-size: 1.3rem;
@@ -250,14 +243,74 @@ height: 956px;
 	margin-bottom: 5px;
 }
 
-.onde-encontrar ul a:hover {
+#onde-encontrar ul a:hover {
 	opacity: 0.5;
 }
 
-.onde-encontrar ul div {
+#onde-encontrar ul div {
 	font-size: 12px;
 	font-size: 1.2rem;
 	color: #666;
+}
+
+#press {margin: 0 auto;}
+
+.press-box {
+	width: 190px;
+	margin: 0  10px auto;
+	display: inline-block;
+}
+
+.press-box h1 {
+	font-size: 18px;
+	font-size: 1.8rem;
+	border-bottom: 2px dotted black;
+	padding-bottom: 3px;
+}
+
+.press-box h2 {
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-style: italic;
+}
+
+.press-box img {
+	border: 10px solid #fff2eb;
+}
+.press-box img:hover {
+	opacity: 0.7;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;	
+}
+
+#colecao article {
+	margin: 20px;
+	font-family: 'BodoniMT-Italic';
+	font-weight: normal;
+	padding: 0;
+	margin: 0 0 auto;
+}
+
+#colecao h1 {
+	font-family: 'BodoniMT-Italic';
+}
+
+#colecao article p {
+	color: #666;
+	text-align: left;
+	font-size: 13px;
+	font-size: 1.3em;
+	color:  #666;
+	font-weight: normal;
+	padding: 10px;
+	margin: 15px auto;	
+}
+
+#colecao .es-carousel li span {
+	text-align: left;
+	color: #666;
+	z-index: 99999999;
 }
 
 a.button {
@@ -268,8 +321,9 @@ a.button {
 	font-family: 'BodoniMT-Italic';
 	font-size: 1.2em;
 	padding: 8px 20px 8px 0;
-	z-index: 9999 !important;
-	margin: 20px auto;
+	z-index: 1 !important;
+	margin: 40px auto;
+	margin-bottom: 10px;
 	text-align: center;
 }
 
@@ -281,6 +335,41 @@ a.button:hover {
 	-o-transition: all 1s ease;
 }
 
+a.saiba-mais {
+	width: 110px;
+	display: block;
+	background: #ed5561;
+	color: white;
+	font-family: 'BodoniMT-Italic';
+	font-weight: normal !important;
+	font-size: 11px;
+	font-size: 1.1rem;
+	padding: 8px 0;
+	z-index: 1 !important;
+	margin: auto;
+	text-align: center;
+	text-shadow: none;
+	text-transform: uppercase;
+	position: relative;
+	top: 110px;
+}
+
+a.saiba-mais:hover {
+	background: black;
+	color: white;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+}
+
+.destaque {
+	color: #ed5561;
+	font-family: 'BodoniMT-Italic';
+	font-weight: normal;
+	font-size: 14px;
+	font-size: 2.4rem;
+	margin: 20px 0;
+}
 /*------------------------  BASE-REM SIZING  */
 
 
@@ -321,11 +410,17 @@ a.button:hover {
 	html {
 		font-size: 11px;
 	}
+		#press, #colecao, #contato {
+			margin-top: 100rem;
+	}
 }
 	
 @media (max-width: 920px) {
 	html {
 		font-size: 10px;
+	}
+	#press, #colecao, #contato {
+			margin-top: 100rem;
 	}
 }
 	
@@ -333,18 +428,49 @@ a.button:hover {
 	html {
 		font-size: 10px;
 	}
+		#onde-encontrar ul{
+		width: 200px;
+		margin: 40px 80px;
+	}
+
+	#press, #colecao, #contato {
+			margin-top: 100rem;
+	}
 }
 	
 @media (max-width: 680px) {
 	html {
 		font-size: 10px;
 	}
+
+	#onde-encontrar ul{
+		width: 200px;
+		margin: 20px 60px;
+	}
+
+	#press, #colecao, #contato {
+			margin-top: 100rem;
+	}
+
+	.hide {display: none; visibility: hidden;}
+
 }
 	
 @media (max-width: 560px) {
 	html {
 		font-size: 9px;
 	}
+
+	#onde-encontrar ul{
+		width: 200px;
+		margin: 20px 30px;
+	}
+
+	#press, #colecao, #contato {
+			margin-top: 100rem;
+	}
+
+	.hide {display: none; visibility: hidden;}
 
 }
 
@@ -362,14 +488,51 @@ a.button:hover {
 	.bohoa img {
 		padding-left: 20px;
 	}
-	.bohoa p {text-align: justify; padding: 0;}
-	.sobre img {width: 70%; }
-	.sobre span {font-size: 0.8em; margin: 50px 50px;}
+	.bohoa p, #colecao article p {text-align: justify; padding: 0;}
+	.sobre img {width: 60%; }
+	.sobre span {font-size: 0.8em; margin: 0px 60px;}
 
+	#onde-encontrar ul{
+		width: 200px;
+		margin: 20px 100px;
+	}
+
+	#press, #colecao, #contato {
+			margin-top: 150rem;
+	}
+
+	.hide {display: none; visibility: hidden;}
+
+	h1 {
+		font-size: 40px;
+		font-size: 4rem;
+	}
+
+	h2 {
+		font-size: 25px;
+		font-size: 2.5rem;
+	}
 }
 
 @media (max-width: 320px) {
 	html {
 		font-size: 50% !important;
 	}
+
+
+	#onde-encontrar ul{
+		width: 200px;
+		margin: 20px 90px;
+	}
+
+	.hide {display: none; visibility: hidden;}
 }
+
+.zoom {
+   display:inline-block;
+   position:relative;
+}
+.zoom img {
+    display: block;
+    background: #f1e0d8;
+}​

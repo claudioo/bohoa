@@ -20,7 +20,7 @@
 			i;
 		
 		var defaults = {
-			buttons: '.sliding',
+			buttons: '.nav-button',
 			slides: '.slide',
 			duration: 600,
 			easing: 'easeInOutExpo',
