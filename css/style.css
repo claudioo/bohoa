@@ -114,7 +114,6 @@ nav {
 	padding: 10px;
 	padding: 1rem;
 	text-decoration: none;
-	color: black;
 	font-size: 15px;
 	font-size: 1.5rem;
 	text-transform: uppercase;
@@ -122,15 +121,19 @@ nav {
 	display: inline-block;
 }
 
-.current, a.nav-button {
-	color: black;
+ a.nav-button, a.nav-button:visited {
+	color: #333;
+}
+
+a.nav-button.current {
+	color: #ee5662;
 }
 
 .current, a.nav-button:hover {
-	color: #333;
 	background: url(../img/menu-hover.png) no-repeat bottom;
 	padding-bottom: 5px;
 }
+
 
 
 /*----------------------------------------  SLIDES  */
@@ -140,7 +143,7 @@ nav {
 	width: 100%;
 	padding: 150px 0;
 	padding: 15rem 0;
-	height: 60rem;
+	height: 100rem;
 	clear: both;
 }
 
@@ -204,7 +207,7 @@ height: 956px;
 	display: block;
 }
 
-#onde-encontrar ul {
+.container ul {
 	display: inline-block; 
 	margin:  50px 20px;
 	text-align: left;
@@ -213,16 +216,16 @@ height: 956px;
 
 }
 
-#onde-encontrar ul:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.container ul:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 
 
-#onde-encontrar li {
+.container li {
 	list-style: none;
 	margin: 10px 0;
 	padding: 0;
 }
 
-#onde-encontrar ul span {
+.container ul span {
 	text-transform: uppercase;
 	font-family: 'BodoniMT-Italic';
 	font-size: 11px;
@@ -230,7 +233,7 @@ height: 956px;
 	font-weight: bold;
 }
 
-#onde-encontrar ul a {
+.container ul a {
 	font-family: 'BodoniMT-Bold';
 	font-size: 13px;
 	font-size: 1.3rem;
@@ -243,11 +246,11 @@ height: 956px;
 	margin-bottom: 5px;
 }
 
-#onde-encontrar ul a:hover {
+.container ul a:hover {
 	opacity: 0.5;
 }
 
-#onde-encontrar ul div {
+.container ul div {
 	font-size: 12px;
 	font-size: 1.2rem;
 	color: #666;
@@ -282,6 +285,10 @@ height: 956px;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;	
+}
+
+#colecao {
+	height: 150rem;
 }
 
 #colecao article {
@@ -370,6 +377,30 @@ a.saiba-mais:hover {
 	font-size: 2.4rem;
 	margin: 20px 0;
 }
+
+.social {
+	margin: 30px 0;
+	border-top: 1px dotted;
+	padding: 30px 0;
+}
+.social h2 {
+	text-transform: uppercase;
+	font-family: 'BodoniMT-Italic';
+	font-size: 11px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: black;
+	padding: 0 0 20px 0;
+}
+
+div.social a {
+	display: inline-block;
+	padding: 0;
+	margin: 0 5px;
+	border-bottom: 0px;
+	width: 37px;
+	background: transparent;
+}
 /*------------------------  BASE-REM SIZING  */
 
 
@@ -428,7 +459,7 @@ a.saiba-mais:hover {
 	html {
 		font-size: 10px;
 	}
-		#onde-encontrar ul{
+		.container ul{
 		width: 200px;
 		margin: 40px 80px;
 	}
@@ -443,7 +474,7 @@ a.saiba-mais:hover {
 		font-size: 10px;
 	}
 
-	#onde-encontrar ul{
+	.container ul{
 		width: 200px;
 		margin: 20px 60px;
 	}
@@ -461,7 +492,7 @@ a.saiba-mais:hover {
 		font-size: 9px;
 	}
 
-	#onde-encontrar ul{
+	.container ul{
 		width: 200px;
 		margin: 20px 30px;
 	}
@@ -492,7 +523,7 @@ a.saiba-mais:hover {
 	.sobre img {width: 60%; }
 	.sobre span {font-size: 0.8em; margin: 0px 60px;}
 
-	#onde-encontrar ul{
+	.container ul{
 		width: 200px;
 		margin: 20px 100px;
 	}
@@ -520,7 +551,7 @@ a.saiba-mais:hover {
 	}
 
 
-	#onde-encontrar ul{
+	.container ul{
 		width: 200px;
 		margin: 20px 90px;
 	}
@@ -532,7 +563,11 @@ a.saiba-mais:hover {
    display:inline-block;
    position:relative;
 }
+
+.zoom img:active, .zoom img:focus, .zoom img:hover {}
+
 .zoom img {
     display: block;
     background: #f1e0d8;
-}​
+    cursor: pointer;
+}

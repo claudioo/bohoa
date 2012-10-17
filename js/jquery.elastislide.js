@@ -79,7 +79,7 @@
 	};
 	
 	$.elastislide.defaults 		= {
-		speed		: 450,	// animation speed
+		speed		: 600,	// animation speed
 		easing		: '',	// animation easing effect
 		imageW		: 190,	// the images width
 		margin		: 3,	// image margin right
@@ -87,7 +87,7 @@
 		minItems	: 1,	// the minimum number of items to show. 
 							// when we resize the window, this will make sure minItems are always shown 
 							// (unless of course minItems is higher than the total number of elements)
-		current		: 0,	// index of the current item
+		current		: 1,	// index of the current item
 							// when we resize the window, the carousel will make sure this item is visible 
 		onClick		: function() { return false; } // click item callback
     };

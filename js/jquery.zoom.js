@@ -7,7 +7,7 @@
 		url: false,
 		icon: true,
 		callback: false,
-		duration: 400,
+		duration: 60,
 		on: 'mouseover' // other options: 'grab' or 'click'
 	};
 
@@ -142,13 +142,13 @@
 
 								start(e);
 
-								$(document)[mousemove](move);
+								$(this)[mousemove](move);
 
-								$(document).one('click',
+								$(this).one('click',
 									function () {
 										stop();
 										clicked = false;
-										$(document).unbind(mousemove, move);
+										$(this).unbind(mousemove, move);
 									}
 								);
 
